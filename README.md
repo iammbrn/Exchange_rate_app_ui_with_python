@@ -73,7 +73,7 @@
 
 ## 9. **Arayüzler Arası Geçiş Ana Penceresi Oluşturma:**
  * Bu işlem için gerekli modüller [current_Main_Interface.py](https://github.com/iammbrn/Exchange_rate_app_ui_with_python/blob/master/current_Main_Interface.py) dosyasına dahil edildi.
- * * `class MainWindow(QMainWindow):` QMainWindow sınıfını miras alan bir sınıf oluşturuldu.
+ * `class MainWindow(QMainWindow):` QMainWindow sınıfını miras alan bir sınıf oluşturuldu.
  * Sınıfın yapıcı fonksiyonu __init__ içinde `super().__init__()` komutu ile üst sınıfa ait özellik ve işlevler bu sınıfa dahil edildi böylece **Ana Pencere** oluşturuldu.
  * `self.window=SignupPage()`: komutu ile bir nesne oluşturuldu.
  * `self.stackedWidget=QStackedWidget()`: komutu ile bir **stackedWidget** oluşturuldu.
