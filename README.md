@@ -71,7 +71,7 @@
  * Daha sonra veritabanına bağlanıp parametre olarak verilen kullanıcı adına sahip kişinin hesabını silmek için `def delete_My_Account(self,username):` fonksiyonu oluşturuldu.
  *  Son olarak **Veritabanı** bağlantısını kesmek için `def __del__(self):` fonksiyonu oluşturularak, bu fonksiyon içinde `self.connect.close()` komutu ile veritabanı bağlantısı kesilir.
 
-## 9. ** Arayüzler Arası Geçiş Ana Penceresi Oluşturma:**
+## 9. **Arayüzler Arası Geçiş Ana Penceresi Oluşturma:**
  * Bu işlem için gerekli modüller [current_Main_Interface.py](https://github.com/iammbrn/Exchange_rate_app_ui_with_python/blob/master/current_Main_Interface.py) dosyasına dahil edildi.
  * * `class MainWindow(QMainWindow):` QMainWindow sınıfını miras alan bir sınıf oluşturuldu.
  * Sınıfın yapıcı fonksiyonu __init__ içinde `super().__init__()` komutu ile üst sınıfa ait özellik ve işlevler bu sınıfa dahil edildi böylece **Ana Pencere** oluşturuldu.
