@@ -50,10 +50,10 @@
  * __init__ içinde `self.window= MainPage()` ve `self.setCentralWidget(self.window)` komutları ile önce **MainPage** sınıfından QWidget nesnesi(penceresi) oluşturuldu sonra bu pencere Ana pencerenin merkezine konuldu.
  * __init__ içinde self.createMenu(username) fonksiyonu oluşturuldu. Bu fonksiyon içinde Ana Pencere üzerine **Menubar** eklenip bu menubara menüler ve actionlar eklendi.
  * Menubar üzerindeki actionlara tıklandığında; <br/>
-   **İsim menüsünde:** herhangi bir işlem gerçekleşmez, bu menüde sadece isim tutulur. 
-   **Ayarlar menüsünde:** *Profil Bilgileri Güncellenebilir, Profil Bilgileri Görüntülenebilir, Hesap Silinebilir ve Çıkış Yapılabilir.*
-   **Dosya menüsünde:** *Dosya kaydetme, Dosya Açma ve Temizleme işlemleri yapılabilir.*
-   **Görünüm menüsünde:** *Tema* kısmıda ekran görünümü *Normal Mod, Gece Modu ve Okuma Moduna geçirilebilir.*
+   **İsim menüsünde:** herhangi bir işlem gerçekleşmez, bu menüde sadece isim tutulur. <br/>
+   **Ayarlar menüsünde:** *Profil Bilgileri Güncellenebilir, Profil Bilgileri Görüntülenebilir, Hesap Silinebilir ve Çıkış Yapılabilir.* <br/>
+   **Dosya menüsünde:** *Dosya kaydetme, Dosya Açma ve Temizleme işlemleri yapılabilir.* <br/>
+   **Görünüm menüsünde:** *Tema* kısmıda ekran görünümü *Normal Mod, Gece Modu ve Okuma Moduna geçirilebilir.* <br/>
    **Yardım menüsünde:** *Kullanım kılavuzuna, Hakkında kısmına ve Sıkça Sorulan Sorulara* ulaşıbilir. 
 
 ## 7. **Kullanıcı Profil Bilgileri Güncelleme Arayüzü:** <br/>
