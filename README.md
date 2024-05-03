@@ -36,7 +36,11 @@
  
  **Kullanıcılar *Üye olurken* belirtilen sayıdan daha az karakter içeren şifre girdiğinde hata mesajı alır.**
    <br/>
-   ![Üye ol ekranı2](https://github.com/iammbrn/Exchange_rate_app_ui_with_python/blob/master/app_img/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202024-05-03%20151513.png)
+   ![Üye ol ekranı3](https://github.com/iammbrn/Exchange_rate_app_ui_with_python/blob/master/app_img/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202024-05-03%20151513.png)<br/>
+ 
+ **Kullanıcılar *Üye olurken* bütün girdileri başarılı bir şekilde girip *Üye Ol* butonuna tıkladıklarında "İşlem Başarılı" mesajı alırlar ve sisteme kayıt işlemleri yapılır.**
+   <br/>
+   ![Üye ol ekranı4](https://github.com/iammbrn/Exchange_rate_app_ui_with_python/blob/master/app_img/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202024-05-03%20160306.png)
 
 ## 4. **Kullanıcı Giriş Yap Sayfası için Veritabanı Bağlantısı Oluşturma:** <br/>
   * Bu işlem için **sqlite3** modülü [login.py](https://github.com/iammbrn/Exchange_rate_app_ui_with_python/blob/master/login.py) dosyasına dahil edildi.
@@ -61,7 +65,12 @@
  
  **Kullanıcılar *Giriş yaparken* eksik bilgi girdiklerinde hata mesajı alırlar.**
    <br/>
-   ![Giriş Yap ekranı2](https://github.com/iammbrn/Exchange_rate_app_ui_with_python/blob/master/app_img/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202024-05-03%20151343.png)
+   ![Giriş Yap ekranı3](https://github.com/iammbrn/Exchange_rate_app_ui_with_python/blob/master/app_img/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202024-05-03%20151343.png)
+     <br/>
+ 
+ **Kullanıcılar *Giriş yaparken* bilgilerini eksiksiz ve doğru girip *Giriş Yap* butonuna tıkladıklarında kendi *Ana Sayfalarına* giriş yaparlar.**
+   <br/>
+   ![Giriş Yap ekranı3](https://github.com/iammbrn/Exchange_rate_app_ui_with_python/blob/master/app_img/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202024-05-03%20160336.png)
    
 
 ## 6. **Kullanıcı Ana Sayfa Arayüzü Oluşturma:** <br/>
@@ -82,9 +91,23 @@
    **Dosya menüsünde:** *Dosya kaydetme, Dosya Açma ve Temizleme işlemleri yapılabilir.* <br/>
    **Görünüm menüsünde:** *Tema* kısmıda ekran görünümü *Normal Mod, Gece Modu ve Okuma Moduna geçirilebilir.* <br/>
    **Yardım menüsünde:** *Kullanım kılavuzuna, Hakkında kısmına ve Sıkça Sorulan Sorulara* ulaşıbilir.
-
-   ![Kullanıcı Ana Sayfa ekranı](https://github.com/iammbrn/Exchange_rate_app_ui_with_python/blob/master/app_img/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202024-05-02%20162716.png)
+   <br/>
    
+   ![Kullanıcı Ana Sayfa ekranı](https://github.com/iammbrn/Exchange_rate_app_ui_with_python/blob/master/app_img/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202024-05-02%20162716.png)
+   <br/>
+
+    ![Kullanıcı Ana Sayfa ekranı2](https://github.com/iammbrn/Exchange_rate_app_ui_with_python/blob/master/app_img/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202024-05-03%20151622.png)
+   <br/>
+
+     ![Kullanıcı Ana Sayfa ekranı3](https://github.com/iammbrn/Exchange_rate_app_ui_with_python/blob/master/app_img/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202024-05-03%20151637.png)
+   <br/>
+
+     ![Kullanıcı Ana Sayfa ekranı4](https://github.com/iammbrn/Exchange_rate_app_ui_with_python/blob/master/app_img/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202024-05-03%20151653.png)
+   <br/>
+
+     ![Kullanıcı Ana Sayfa ekranı4](https://github.com/iammbrn/Exchange_rate_app_ui_with_python/blob/master/app_img/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202024-05-03%20151703.png)
+   <br/>
+
 
 ## 7. **Kullanıcı Profil Bilgileri Güncelleme Arayüzü:** <br/>
  *  Bu işlem için gerekli modüller [update_User_Informations.py](https://github.com/iammbrn/Exchange_rate_app_ui_with_python/blob/master/update_User_Informations.py) dosyasına dahil edildi.
@@ -94,6 +117,22 @@
  * `class UpdatePage(QWidget):` QWidget sınıfını miras alan bir sınıf oluşturuldu.
  * Sınıfın yapıcı fonksiyonu __init__ içinde `super().__init__()` komutu ile üst sınıfa ait özellik ve işlevler bu sınıfa dahil edildi böylece pencere oluşturuldu ve __init__ içinde **self.setupUpdatePage()** fonksiyonu oluşturuldu.
  * `def setupUpdatePage(self):` fonksiyonu ile pencereye label, buton, ve renk vb. özellikler eklendi.
+   <br/>
+   
+   **Kullanıcı *Ayarlar* menüsünden *Profil Bilgilerini Güncelle* butonuna tıkladığında profil bilgilerini güncelleme sayfası açılır.**
+   <br/>
+   
+   ![Profil Bilgilerini Güncelleme2](https://github.com/iammbrn/Exchange_rate_app_ui_with_python/blob/master/app_img/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202024-05-03%20151722.png)
+   <br/>
+   
+   ***a* kullanıcı adına sahip kullanıcı profil bilgilerini güncellemek için verilen bilgileri doldurur.**
+   <br/>
+   ![Profil Bilgilerini Güncelleme3](https://github.com/iammbrn/Exchange_rate_app_ui_with_python/blob/master/app_img/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202024-05-03%20160651.png)
+   <br/>
+   
+   ***a* kullanıcı adına sahip kullanıcı yeni profil bilgilerini güncellemek için *Güncelle* butonuna tıklarsa yeni kullanıcı adıyla kullanıcı *Ana Sayfası* açılır.**
+   <br/>
+   ![Profil Bilgilerini Güncelleme3](https://github.com/iammbrn/Exchange_rate_app_ui_with_python/blob/master/app_img/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202024-05-03%20160704.png) 
 
 ## 8. **Hesabımı Sil Sınıfı Oluşturma:** <br/>
  * Bu işlem için gerekli modüller [delete_my_account.py](https://github.com/iammbrn/Exchange_rate_app_ui_with_python/blob/master/delete_my_account.py) dosyasına dahil edildi.
