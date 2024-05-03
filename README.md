@@ -17,6 +17,8 @@
  * **signUp** fonksiyonu verilen parametre değerlerini **veritabanı** üzerinde kontrol ederek return ile sonuç döndürür.
  * Son olarak **Veritabanı** bağlantısını kesmek için `def __del__(self):` fonksiyonu oluşturularak, bu fonksiyon içinde `self.connect.close()` komutu ile veritabanı bağlantısı kesilir.
    
+   ![Üye ol ekranı](https://github.com/iammbrn/Exchange_rate_app_ui_with_python/blob/master/app_img/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202024-05-02%20162435.png)
+   
 
 ## 3. **Kullanıcı Üye Ol Arayüzü Oluşturma:** <br/>
  * Bu işlem için **sys, pyqt5 ve (from signup import * )** modülleri [user_signup_ui.py](https://github.com/iammbrn/Exchange_rate_app_ui_with_python/blob/master/user_signup_ui.py) dosyasına dahil edildi.
@@ -25,6 +27,16 @@
  * `def setupSignupPage(self):` fonksiyonu ile pencereye label, buton, ve renk vb. özellikler eklendi.
  * `self.pushButton_signup.clicked.connect(self.signup)` komutu Pencere üzerinde bulunan **self.pushButton_signup** butonuna tıklandığında onu **self.signup** fonksiyonuna bağlar.
  * `def signup(self):` fonksiyonu `self.createuser=SignUp()` komutu ile **SignUp** sınıfına ait bir nesne oluşturark `self.createuser.signUp(name, surname, username, email, password)` komutu ile bu nesne üzerinden pencere üzerine kullanıcının girmiş olduğu verileri kullanarak üye kaydı gerçekleştirilir.
+ <br/>
+ 
+ **Kullanıcılar *Üye olurken* e-posta bilgilerini yanlış girdiğinde hata mesajı alır.**
+   <br/>
+ 
+   ![Üye ol ekranı2](https://github.com/iammbrn/Exchange_rate_app_ui_with_python/blob/master/app_img/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202024-05-03%20151443.png) <br/>
+ 
+ **Kullanıcılar *Üye olurken* belirtilen sayıdan daha az karakter içeren şifre girdiğinde hata mesajı alır.**
+   <br/>
+   ![Üye ol ekranı2](https://github.com/iammbrn/Exchange_rate_app_ui_with_python/blob/master/app_img/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202024-05-03%20151513.png)
 
 ## 4. **Kullanıcı Giriş Yap Sayfası için Veritabanı Bağlantısı Oluşturma:** <br/>
   * Bu işlem için **sqlite3** modülü [login.py](https://github.com/iammbrn/Exchange_rate_app_ui_with_python/blob/master/login.py) dosyasına dahil edildi.
@@ -32,11 +44,25 @@
  * Daha sonra sınıf içinde `def logIn(self,username,password):` fonksyionu oluşturuldu. Bu fonksiyon verilien parametre değerlerini **veritabanı** üzerinde kontrol ederek return ile sonuç döndürür.
  * Son olarak **Veritabanı** bağlantısını kesmek için `def __del__(self):` fonksiyonu oluşturularak, bu fonksiyon içinde `self.connect.close()` komutu ile veritabanı bağlantısı kesilir.
 
+   ![Giriş Yap ekranı](https://github.com/iammbrn/Exchange_rate_app_ui_with_python/blob/master/app_img/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202024-05-02%20162635.png)
+   
+
 ## 5. **Kullanıcı Giriş Yap Sayfası Arayüzü Oluşturulması:** <br/>
   * Bu işlem için **sys ve pyqt5** modülleri [user_login_ui.py](https://github.com/iammbrn/Exchange_rate_app_ui_with_python/blob/master/user_login_ui.py) dosyasına dahil edildi.
  * `class LoginPage(QWidget):` QWidget sınıfını miras alan bir sınıf oluşturuldu.
  * Sınıfın yapıcı fonksiyonu __init__ içinde `super().__init__()` komutu ile üst sınıfa ait özellik ve işlevler bu sınıfa dahil edildi böylece pencere oluşturuldu ve __init__ içinde **self.setupLoginPage()** fonksiyonu oluşturuldu.
  * `def setupLoginPage(self):` fonksiyonu ile pencereye label, buton, ve renk vb. özellikler eklendi.
+   <br/>
+ 
+ **Kullanıcılar *Giriş yaparken* yanlış şifre veya kullanıcı adı girdiklerinde hata mesajı alırlar.**
+   <br/>
+   ![Giriş Yap ekranı2](https://github.com/iammbrn/Exchange_rate_app_ui_with_python/blob/master/app_img/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202024-05-03%20151408.png) 
+     <br/>
+ 
+ **Kullanıcılar *Giriş yaparken* eksik bilgi girdiklerinde hata mesajı alırlar.**
+   <br/>
+   ![Giriş Yap ekranı2](https://github.com/iammbrn/Exchange_rate_app_ui_with_python/blob/master/app_img/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202024-05-03%20151343.png)
+   
 
 ## 6. **Kullanıcı Ana Sayfa Arayüzü Oluşturma:** <br/>
  * Bu işlem için gerekli modüller [main_page_project.py](https://github.com/iammbrn/Exchange_rate_app_ui_with_python/blob/master/main_page_project.py) dosyasına dahil edildi.
@@ -55,7 +81,10 @@
    **Ayarlar menüsünde:** *Profil Bilgileri Güncellenebilir, Profil Bilgileri Görüntülenebilir, Hesap Silinebilir ve Çıkış Yapılabilir.* <br/>
    **Dosya menüsünde:** *Dosya kaydetme, Dosya Açma ve Temizleme işlemleri yapılabilir.* <br/>
    **Görünüm menüsünde:** *Tema* kısmıda ekran görünümü *Normal Mod, Gece Modu ve Okuma Moduna geçirilebilir.* <br/>
-   **Yardım menüsünde:** *Kullanım kılavuzuna, Hakkında kısmına ve Sıkça Sorulan Sorulara* ulaşıbilir. 
+   **Yardım menüsünde:** *Kullanım kılavuzuna, Hakkında kısmına ve Sıkça Sorulan Sorulara* ulaşıbilir.
+
+   ![Kullanıcı Ana Sayfa ekranı](https://github.com/iammbrn/Exchange_rate_app_ui_with_python/blob/master/app_img/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202024-05-02%20162716.png)
+   
 
 ## 7. **Kullanıcı Profil Bilgileri Güncelleme Arayüzü:** <br/>
  *  Bu işlem için gerekli modüller [update_User_Informations.py](https://github.com/iammbrn/Exchange_rate_app_ui_with_python/blob/master/update_User_Informations.py) dosyasına dahil edildi.
