@@ -1,8 +1,8 @@
 import sys
 from signup import *
 
-from PyQt5 import QtWidgets,QtGui
-from PyQt5.QtWidgets import QWidget,QLayout,QApplication,QVBoxLayout,QHBoxLayout,QPushButton,QLabel,QLineEdit, QMessageBox,QStackedWidget,QMainWindow
+from PyQt5 import QtWidgets
+from PyQt5.QtWidgets import QWidget,QApplication,QVBoxLayout,QHBoxLayout,QPushButton,QLabel,QLineEdit, QMessageBox
 
 
 class SignupPage(QWidget):

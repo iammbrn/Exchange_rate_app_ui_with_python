@@ -6,11 +6,8 @@ import sqlite3
 import sys
 
 from update_User_Informations import *
-from update_User_Informations import UpdatePage
+
 from web_currents_data import Currency_Convert
-
-
-
 
 from delete_my_account import *
 
