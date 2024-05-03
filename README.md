@@ -16,6 +16,7 @@
  * Daha sonra sınıf içinde `def signUp(self,name,surname,username,email,password):` fonksyionu oluşturulur.
  * **signUp** fonksiyonu verilen parametre değerlerini **veritabanı** üzerinde kontrol ederek return ile sonuç döndürür.
  * Son olarak **Veritabanı** bağlantısını kesmek için `def __del__(self):` fonksiyonu oluşturularak, bu fonksiyon içinde `self.connect.close()` komutu ile veritabanı bağlantısı kesilir.
+   
 
 ## 3. **Kullanıcı Üye Ol Arayüzü Oluşturma:** <br/>
  * Bu işlem için **sys, pyqt5 ve (from signup import * )** modülleri [user_signup_ui.py](https://github.com/iammbrn/Exchange_rate_app_ui_with_python/blob/master/user_signup_ui.py) dosyasına dahil edildi.
