@@ -1,5 +1,6 @@
 import sys
 
+
 from PyQt5 import QtWidgets,QtGui
 
 from PyQt5.QtWidgets import QStackedWidget,QMainWindow,QApplication
